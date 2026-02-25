@@ -1,0 +1,379 @@
+@import url(./variable.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.logo{
+    height: 64px;
+    object-fit: cover;
+}
+
+.section-hero {
+  background-color: #ff5200 !important;
+  width: 100%;
+  min-height: 480px;
+}
+
+.side-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.veggies{
+    width: 250px !important;
+    height: 450px !important;
+    position: absolute;
+    top: 120;
+    left: 0;
+}
+
+.veggie{
+    width: 250px !important;
+    height: 450px !important;
+    position: absolute;
+    top: 120px;
+    right: 0;
+
+}
+
+.input-section{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.left-input{
+    background-color: white !important;
+    padding: 16px 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    width: 23.3%; 
+}
+
+.right-input{
+    background-color: white !important;
+    padding: 16px 48px;
+    border-radius: 16px;
+    display: flex;
+    align-self: center;
+    width: 28%;
+}
+
+.text-right{
+    width: 100%;
+    position: relative;
+    right: 32px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.text-left{
+    width: 100%;
+    position: relative;
+    right: 16px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.hero-card{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+.hero-cards{
+    height: 380px;
+    width:100%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-arrow{
+    height: 32px;
+}
+
+
+.card-img{
+    flex-wrap: wrap;
+}
+
+.card-img .img-card-cotainer{
+    animation: appear 0.8s  ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    max-width: 180px;
+    object-fit: cover;
+    gap: 20px;
+    display: flex;
+    margin: 20px;
+}
+/* INSTAMART */
+.instamart-row {
+      display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.insta-card {
+  min-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  animation: fade-up 0.8s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.insta-card img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.insta-card p {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card , .city-name{
+    cursor: pointer;
+  opacity: 0;
+  animation: fade-up 0.8s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.w-100{
+        opacity: 0;
+  animation: fade-up 0.8s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+  animation-direction: reverse;
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+.track-1 {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  min-width: 200px;
+  height: 80px;
+  border-radius: 6px;
+}
+
+.wrapper:hover .track,
+.wrapper:hover .track-1 {
+  animation-play-state: paused;
+}
+
+footer{
+    background-color: #F0F0F5;
+    min-height: 480px;
+}
+
+/* SCROLL ANIMATION */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.overlay{
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 99;
+  width: 100%;
+  background: linear-gradient(0deg, #000, #00000000);
+}
+.card-name{
+  bottom: 10px;
+  color: #fff;
+  z-index: 999;
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+/* Tablet (992px se neeche) */
+@media (max-width: 992px) {
+  .veggies,
+  .veggie {
+    width: 160px !important;
+    height: 300px !important;
+  }
+
+  .left-input {
+    width: 35%;
+  }
+
+  .right-input {
+    width: 40%;
+  }
+
+  .hero-cards {
+    height: 260px;
+  }
+}
+
+/* Mobile (768px se neeche) */
+@media (max-width: 768px) {
+  .veggies,
+  .veggie {
+    display: none !important;
+  }
+
+  .section-hero {
+    min-height: auto;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .left-input {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .right-input {
+    width: 100%;
+    border-radius: 12px;
+    padding: 16px 24px;
+  }
+
+  .card-img {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+
+  .card-img::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-img .img-card-cotainer {
+    min-width: 130px;
+    max-width: 130px;
+    margin: 10px;
+    flex-shrink: 0;
+  }
+
+  .hero-cards {
+    height: 180px;
+  }
+
+  .insta-card {
+    min-width: 120px;
+  }
+
+  .insta-card img {
+    width: 120px;
+  }
+
+  footer {
+    min-height: auto;
+  }
+}
+
+/* Small Mobile (480px se neeche) */
+@media (max-width: 480px) {
+  .hero-cards {
+    height: 130px;
+  }
+
+  .card-img .img-card-cotainer {
+    min-width: 110px;
+    max-width: 110px;
+  }
+
+  .insta-card {
+    min-width: 100px;
+  }
+
+  .insta-card img {
+    width: 100px;
+  }
+
+  .logo {
+    height: 44px;
+  }
+
+  .item {
+    min-width: 160px;
+  }
+}

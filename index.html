@@ -1,0 +1,1363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy | Clone</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon (Website ka chhota icon browser tab mein) -->
+    <link
+      rel="shortcut icon"
+      href="./images/default (1).png"
+      type="image/x-icon"
+    />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ============================================= -->
+    <!-- NAVBAR & HERO SECTION START -->
+    <!-- ============================================= -->
+
+    <div class="section-hero">
+      <!-- NAVBAR -->
+      <nav class="navbar py-4 container-fluid navbar-expand-lg">
+        <div class="container">
+          <!-- Logo -->
+          <a href="navbar-brand">
+            <img
+              src="./images/swiggy_logo_white.png"
+              class="w-100 logo"
+              alt="Swiggy Logo"
+            />
+          </a>
+
+          <!-- Hamburger Menu Button (Mobile ke liye) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- Navbar Links (Collapsible) -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul
+              class="navbar-nav d-flex align-items-center ms-auto gap-4 text-light"
+            >
+              <!-- Nav Item 1 -->
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-5 text-light"
+                  aria-current="page"
+                  href="#"
+                >
+                  Swiggy Corporate
+                </a>
+              </li>
+
+              <!-- Nav Item 2 -->
+              <li class="nav-item">
+                <a class="nav-link active fs-5 text-light" href="#">
+                  Partner with us
+                </a>
+              </li>
+
+              <!-- Buttons Container -->
+              <div class="d-flex gap-4 align-items-center btns">
+                <!-- Get App Button -->
+                <a href="" class="primary-btn fs-5">
+                  Get App
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Sign In Button -->
+                <a href="" class="secondary-btn fs-5">Sign in</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-section-right">
+          <div class="row container-fluid">
+            <div class="container py-5 side-img">
+              <!-- Left Veggie Image -->
+              <img
+                src="./images/Veggies_new.png"
+                loading="lazy"
+                class="w-100 veggies"
+                alt="Vegetables"
+              />
+
+              <!-- Hero Text (Center) -->
+              <div class="align-items-center justify-content-center">
+                <h1 class="text-center text-light fw-bold">
+                  Order food & groceries. Discover
+                </h1>
+                <h1 class="text-center text-light fw-bold">
+                  best restaurants. Swiggy it!.
+                </h1>
+              </div>
+
+              <!-- Right Sushi Image -->
+              <img
+                src="./images/Sushi_replace.png"
+                loading="lazy"
+                class="w-100 veggie"
+                alt="Sushi"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEARCH INPUT SECTION -->
+      <div class="input-section g-5 d-flex justify-content-center text-center">
+        <!-- Left Input (Location) -->
+        <div
+          class="left-input d-flex align-items-center justify-content-between gap-4"
+        >
+          <!-- Location Icon -->
+          <a href="navbar-brand">
+            <img src="./images/default.png" alt="Location Icon" />
+          </a>
+
+          <!-- Location Input -->
+          <input
+            class="fs-6 ms-auto text-left"
+            type="text"
+            placeholder="Enter your delivery location"
+          />
+
+          <!-- Dropdown Icon -->
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <!-- Right Input (Search) -->
+        <div class="right-input d-flex justify-content-between accordion gap-4">
+          <!-- Search Input -->
+          <input
+            type="text"
+            class="text-right"
+            placeholder="Search for restaurant, item or more"
+          />
+
+          <!-- Search Icon -->
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
+
+      <!-- HERO CARDS (3 Cards) -->
+      <div class="hero-card py-4">
+        <div class="card-contant d-flex">
+          <!-- Card 1 -->
+          <img
+            src="./images/card1.png"
+            class="w-100 hero-cards"
+            loading="lazy"
+            alt="Card 1"
+          />
+
+          <!-- Card 2 -->
+          <img
+            src="./images/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png"
+            loading="lazy"
+            class="w-100 hero-cards"
+            alt="Card 2"
+          />
+
+          <!-- Card 3 -->
+          <img
+            src="./images/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png"
+            loading="lazy"
+            class="w-100 hero-cards"
+            alt="Card 3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR & HERO SECTION END -->
+
+    <!-- ============================================= -->
+    <!-- FOOD OPTIONS SECTION START -->
+    <!-- ============================================= -->
+
+    <div class="food-option city-name container-fluid">
+      <div class="container py-5">
+        <!-- Heading + Arrow Buttons -->
+        <div
+          class="food-heading d-flex align-items-center container justify-content-between"
+        >
+          <h3 class="fw-bold">Order our best food options</h3>
+
+          <!-- Slider Arrows -->
+          <div
+            class="silder d-flex align-items-center justify-content-center gap-3"
+          >
+            <!-- Left Arrow -->
+            <img
+              src="./images/arrow-left-circle.svg"
+              class="left-arrow"
+              alt="Left Arrow"
+            />
+
+            <!-- Right Arrow -->
+            <img
+              src="./images/arrow-right-circle.svg"
+              class="left-arrow"
+              alt="Right Arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOD ITEM IMAGES (Horizontal Scroll) -->
+    <div
+      class="card-img d-flex align-items-center justify-content-between container"
+    >
+      <!-- 15 Food Images -->
+      <img
+        src="./images/Gulab Jamun.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Gulab Jamun"
+      />
+      <img
+        src="./images/Biryani.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Biryani"
+      />
+      <img
+        src="./images/Coffee.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Coffee"
+      />
+      <img
+        src="./images/Coffee.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Coffee"
+      />
+      <img
+        src="./images/Desserts.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Desserts"
+      />
+      <img
+        src="./images/Khichdi.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Khichdi"
+      />
+      <img
+        src="./images/Lassi.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Lassi"
+      />
+      <img
+        src="./images/North Indian.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="North Indian"
+      />
+      <img
+        src="./images/Pasta.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Pasta"
+      />
+      <img
+        src="./images/Pizza.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Pizza"
+      />
+      <img
+        src="./images/Samosa.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Samosa"
+      />
+      <img
+        src="./images/Paratha.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Paratha"
+      />
+      <img
+        src="./images/North Indian.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="North Indian"
+      />
+      <img
+        src="./images/Pasta.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Pasta"
+      />
+      <img
+        src="./images/Pizza.png"
+        class="img-card-cotainer"
+        loading="lazy"
+        alt="Pizza"
+      />
+    </div>
+
+    <!-- FOOD OPTIONS SECTION END -->
+
+    <!-- ============================================= -->
+    <!-- INSTAMART SECTION (Grocery Shopping) -->
+    <!-- ============================================= -->
+
+    <section class="instamart-section city-name container-fluid pt-5">
+      <div class="container">
+        <!-- Heading + Slider Arrows -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold">Shop groceries on Instamart</h3>
+
+          <!-- Slider Controls -->
+          <div class="slider d-flex gap-3">
+            <img
+              src="./images/arrow-left-circle.svg"
+              class="left-arrow"
+              alt="Left"
+            />
+            <img
+              src="./images/arrow-right-circle.svg"
+              class="left-arrow"
+              alt="Right"
+            />
+          </div>
+        </div>
+
+        <!-- Grocery Cards Container -->
+        <div class="instamart-row">
+          <!-- Card 1 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (1).png"
+              alt="Fresh Vegetables"
+              loading="lazy"
+            />
+            <p>Fresh Vegetables</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (2).png"
+              alt="Fresh Fruits"
+              loading="lazy"
+            />
+            <p>Fresh Fruits</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (3).png"
+              alt="Dairy Products"
+              loading="lazy"
+            />
+            <p>Dairy Products</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (4).png"
+              alt="Cold Drinks"
+              loading="lazy"
+            />
+            <p>Cold Drinks</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="insta-card">
+            <img src="./images/food-1 (5).png" alt="Snacks" loading="lazy" />
+            <p>Snacks</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (6).png"
+              alt="Instant Food"
+              loading="lazy"
+            />
+            <p>Instant Food</p>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (7).png"
+              alt="Personal Care"
+              loading="lazy"
+            />
+            <p>Personal Care</p>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (8).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+
+          <!-- Cards 9-14 (Same pattern) -->
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (9).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (10).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (11).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (12).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (13).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+          <div class="insta-card">
+            <img
+              src="./images/food-1 (14).png"
+              alt="Household Items"
+              loading="lazy"
+            />
+            <p>Household Items</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAMART SECTION END -->
+
+    <!-- ============================================= -->
+    <!-- DINEOUT SECTION (Restaurant Cards) -->
+    <!-- ============================================= -->
+
+    <section class="container-fluid city-name py-5">
+      <div class="container">
+        <!-- Heading + Arrows -->
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="fw-bold">Discover best restaurants on Dineout</h3>
+
+          <!-- Slider Arrows -->
+          <div class="d-flex gap-3">
+            <img
+              src="./images/arrow-left-circle.svg"
+              class="left-arrow"
+              alt="Left"
+            />
+            <img
+              src="./images/arrow-right-circle.svg"
+              class="left-arrow"
+              alt="Right"
+            />
+          </div>
+        </div>
+
+        <!-- Restaurant Cards Row (Bootstrap Grid) -->
+        <div class="row g-4">
+          <!-- Restaurant Card 1 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <div class="position-relative">
+                <!-- Card Image -->
+                <img
+                  src="./images/restaurants4 (1).jpg"
+                  loading="lazy"
+                  class="card-img-top"
+                  alt="Restaurant"
+                />
+                <div class="card-name position-absolute w-100 px-3 d-flex justify-content-between align-items-center">
+                  <p class="fs-6 m-0">Paaji Restaurant</p>
+                  <span>4.1</span>
+                </div>
+                <div class="overlay"></div>
+                
+              </div>
+
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title">Restaurant Name</h5>
+                <p class="card-text">Indian, Chinese • ₹1200 for two</p>
+
+                <!-- Action Buttons -->
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="btn btn-outline-danger btn-sm"
+                    >Book Table</a
+                  >
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restaurant Card 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <img
+                src="./images/restaurants4 (2).jpg"
+                loading="lazy"
+                class="card-img-top"
+                alt="Restaurant"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Restaurant Name</h5>
+                <p class="card-text">Italian, Pizza • ₹1500 for two</p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="btn btn-outline-danger btn-sm"
+                    >Book Table</a
+                  >
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restaurant Card 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <img
+                src="./images/restaurants4 (3).jpg"
+                loading="lazy"
+                class="card-img-top"
+                alt="Restaurant"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Restaurant Name</h5>
+                <p class="card-text">Cafe, Desserts • ₹800 for two</p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="btn btn-outline-danger btn-sm"
+                    >Book Table</a
+                  >
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restaurant Card 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <img
+                src="./images/restaurants4 (4).jpg"
+                loading="lazy"
+                class="card-img-top"
+                alt="Restaurant"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Restaurant Name</h5>
+                <p class="card-text">Fine Dining • ₹2500 for two</p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="btn btn-outline-danger btn-sm"
+                    >Book Table</a
+                  >
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DINEOUT SECTION END -->
+
+    <!-- ============================================= -->
+    <!-- APP DOWNLOAD BANNER -->
+    <!-- ============================================= -->
+
+    <section class="py-5">
+      <a href="" class="navbar-brand">
+        <img
+          src="./images/App_download_banner.png"
+          class="w-100"
+          alt="Download App Banner"
+        />
+      </a>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- CITIES WITH FOOD DELIVERY (Scrolling Buttons) -->
+    <!-- ============================================= -->
+
+    <section class="container-fluid city-name py-5">
+      <div class="container">
+        <!-- Section Heading -->
+        <div
+          class="d-flex justify-content-between align-items-center city-name mb-4"
+        >
+          <h3 class="fw-bold">Discover best restaurants on Dineout</h3>
+        </div>
+      </div>
+
+      <!-- Scrolling City Buttons -->
+      <div class="silder-section d-flex flex-column gap-3">
+        <!-- First Row of Cities -->
+        <div class="wrapper city-name">
+          <div class="track">
+            <!-- 20 City Buttons -->
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Bangalore
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Gurgaon
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Hyderabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Delhi
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Mumbai
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Pune
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Kolkata
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Chennai
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Ahmedabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Chandigarh
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Jaipur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Kochi
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Noida
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Greater Noida
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Faridabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Ghaziabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Indore
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Bhopal
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Lucknow
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Kanpur
+            </button>
+          </div>
+        </div>
+
+        <!-- Second Row of Cities -->
+        <div class="wrapper city-name">
+          <div class="track-1">
+            <!-- 20 More City Buttons -->
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Dehradun
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Amritsar
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Ludhiana
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Jalandhar
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Surat
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Vadodara
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Rajkot
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Nagpur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Nashik
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Aurangabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Coimbatore
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Madurai
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Vijayawada
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Guntur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Bhubaneswar
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Cuttack
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Ranchi
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Jamshedpur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Guwahati
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order food online in Shillong
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOD DELIVERY CITIES END -->
+
+    <!-- ============================================= -->
+    <!-- CITIES WITH GROCERY DELIVERY (Same pattern) -->
+    <!-- ============================================= -->
+
+    <section class="container-fluid city-name py-5">
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-center city-name mb-4"
+        >
+          <h3 class="fw-bold">Cities with grocery delivery</h3>
+        </div>
+      </div>
+
+      <div class="silder-section d-flex flex-column gap-3">
+        <!-- First Row -->
+        <div class="wrapper city-name">
+          <div class="track">
+            <!-- 20 Grocery Delivery Cities -->
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Bangalore
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Gurgaon
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Hyderabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Delhi
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Mumbai
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Pune
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Kolkata
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Chennai
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Ahmedabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Chandigarh
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Jaipur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Kochi
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Noida
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Greater Noida
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Faridabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Ghaziabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Indore
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Bhopal
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Lucknow
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Kanpur
+            </button>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="wrapper city-name">
+          <div class="track-1">
+            <!-- 20 More Grocery Cities -->
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Dehradun
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Amritsar
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Ludhiana
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Jalandhar
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Surat
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Vadodara
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Rajkot
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Nagpur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Nashik
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Aurangabad
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Coimbatore
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Madurai
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Vijayawada
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Guntur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Bhubaneswar
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Cuttack
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Ranchi
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Jamshedpur
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Guwahati
+            </button>
+            <button
+              class="item text-center text-dark fw-bold bg-body-tertiary city-btn"
+            >
+              Order grocery delivery in Shillong
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROCERY DELIVERY CITIES END -->
+
+    <!-- ============================================= -->
+    <!-- FOOTER SECTION START -->
+    <!-- ============================================= -->
+
+    <footer class="py-5">
+      <div class="container">
+        <!-- ===== UPPER FOOTER ROW ===== -->
+        <div class="row">
+          <!-- COLUMN 1: Logo + Copyright (4 columns wide) -->
+          <div class="col-lg-4 col-md-3 col-sm-12 mb-5">
+            <!-- Logo Image -->
+            <img
+              src="./images/Group (1).png"
+              alt="Swiggy"
+              class="mb-3"
+              style="width: 120px"
+            />
+
+            <!-- Copyright Text -->
+            <p class="text-muted small">
+              <a
+                href=""
+                class="text-danger-emphasis fst-italic py-3 justify-content-center text-a-center"
+                >Made By Akash❤️</a
+              >
+            </p>
+          </div>
+
+          <!-- COLUMN 2: Company Links (2 columns wide) -->
+          <div class="col-lg-2 col-md-3 col-sm-2 mb-4">
+            <!-- Section Heading -->
+            <h6 class="fw-bold mb-3">Company</h6>
+
+            <!-- Links List -->
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Swiggy Corporate</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Careers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Team</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Swiggy One</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Swiggy Instamart</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Swiggy Dineout</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Minis</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Pyng</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 3: Contact + Legal (2 columns wide) -->
+          <div class="col-lg-2 col-md-3 col-sm-2 mb-4">
+            <!-- CONTACT SECTION -->
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Contact us</h6>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Help & Support</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Partner With Us</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Ride With Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- LEGAL SECTION -->
+            <div>
+              <h6 class="fw-bold mb-3">Legal</h6>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Cookie Policy</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- COLUMN 4: Available in Cities (2 columns wide) -->
+          <div class="col-lg-2 col-md-3 col-sm-2 mb-4">
+            <h6 class="fw-bold mb-3">Available in:</h6>
+
+            <!-- Cities List -->
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Bangalore</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Gurgaon</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Hyderabad</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Delhi</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Mumbai</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none">Pune</a>
+              </li>
+            </ul>
+
+            <!-- Dropdown Button for More Cities -->
+            <button class="btn btn-outline-secondary btn-sm">
+              685 cities <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- COLUMN 5: Life at Swiggy + Social Links (2 columns wide) -->
+          <div class="col-lg-2 col-md-12 col-sm-2 mb-4">
+            <!-- LIFE AT SWIGGY SECTION -->
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Life at Swiggy</h6>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Explore With Swiggy</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Swiggy News</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Snackables</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- SOCIAL LINKS SECTION -->
+            <div>
+              <h6 class="fw-bold mb-3">Social Links</h6>
+
+              <!-- Social Media Icons (Flexbox) -->
+              <div class="d-flex gap-3">
+                <a href="#" class="text-dark fs-5"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="#" class="text-dark fs-5"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="text-dark fs-5"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="text-dark fs-5"
+                  ><i class="bi bi-pinterest"></i
+                ></a>
+                <a href="#" class="text-dark fs-5"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- UPPER FOOTER ROW END -->
+
+        <!-- ===== HORIZONTAL DIVIDER LINE ===== -->
+        <hr class="my-4 border-secondary" />
+
+        <!-- ===== LOWER FOOTER ROW (App Download) ===== -->
+        <div class="row align-items-center">
+          <!-- LEFT: Download Text (7 columns wide) -->
+          <div class="col-lg-7 col-md-6 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-0">
+              For better experience, download the Swiggy app now
+            </h5>
+          </div>
+
+          <!-- RIGHT: App Store Buttons (5 columns wide) -->
+          <div class="col-lg-5 col-md-6 text-md-end text-center">
+            <!-- App Store Button -->
+            <a href="#" class="d-inline-block me-2 mb-2 mb-md-0">
+              <img
+                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+                alt="App Store"
+                style="height: 54px"
+              />
+            </a>
+
+            <!-- Play Store Button -->
+            <a href="#" class="d-inline-block">
+              <img
+                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                alt="Play Store"
+                style="height: 54px"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- LOWER FOOTER ROW END -->
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- Bootstrap JavaScript Bundle (Navbar collapse functionality ke liye) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
