@@ -35,7 +35,7 @@ body {
     width: 250px !important;
     height: 450px !important;
     position: absolute;
-    top: 120;
+    top: 120px;
     left: 0;
 }
 
@@ -52,6 +52,8 @@ body {
     display: flex;
     gap: 20px;
     width: 100%;
+    padding: 0 16px;
+    flex-wrap: wrap;
 }
 
 .left-input{
@@ -60,7 +62,7 @@ body {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    width: 23.3%; 
+    width: min(420px, 100%);
 }
 
 .right-input{
@@ -69,7 +71,7 @@ body {
     border-radius: 16px;
     display: flex;
     align-self: center;
-    width: 28%;
+    width: min(520px, 100%);
 }
 
 .text-right{
@@ -93,11 +95,19 @@ body {
 .hero-card{
     display: flex;
     justify-content: space-around;
+    padding-inline: 16px;
 
   }
 
+.card-contant {
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  justify-content: center;
+}
+
 .hero-cards{
-    height: 380px;
+    height: 320px;
     width:100%;
     overflow: hidden;
     object-fit: cover;
@@ -112,6 +122,7 @@ body {
 
 .card-img{
     flex-wrap: wrap;
+    justify-content: center !important;
 }
 
 .card-img .img-card-cotainer{
@@ -122,7 +133,7 @@ body {
     object-fit: cover;
     gap: 20px;
     display: flex;
-    margin: 20px;
+    margin: 10px;
 }
 /* INSTAMART */
 .instamart-row {
@@ -198,9 +209,16 @@ body {
 }
 
 .item {
-  min-width: 200px;
+  min-width: 220px;
   height: 80px;
   border-radius: 6px;
+}
+
+.city-btn {
+  border: 1px solid rgba(2, 6, 12, 0.1);
+  border-radius: 12px;
+  padding: 10px 14px;
+  white-space: normal;
 }
 
 .wrapper:hover .track,
@@ -263,20 +281,25 @@ footer{
 
 
 /* RESPONSIVE MEDIA QUERIES */
-/* Tablet (992px se neeche) */
-@media (max-width: 992px) {
+@media (max-width: 1199.98px) {
+  .logo {
+    height: 56px;
+  }
+
   .veggies,
   .veggie {
-    width: 160px !important;
-    height: 300px !important;
+    width: 180px !important;
+    height: 320px !important;
+    top: 140px;
   }
 
-  .left-input {
-    width: 35%;
+  .hero-section h1 {
+    font-size: 2rem;
+    line-height: 1.3;
   }
 
-  .right-input {
-    width: 40%;
+  .card-contant {
+    gap: 12px;
   }
 
   .hero-cards {
@@ -284,96 +307,163 @@ footer{
   }
 }
 
-/* Mobile (768px se neeche) */
-@media (max-width: 768px) {
-  .veggies,
-  .veggie {
-    display: none !important;
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 14px !important;
+    padding-top: 18px;
   }
 
-  .section-hero {
-    min-height: auto;
+  .btns {
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+    gap: 10px !important;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: fit-content;
+  }
+
+  .veggies,
+  .veggie {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 1.7rem;
   }
 
   .input-section {
     flex-direction: column;
     align-items: center;
-    padding: 0 16px;
     gap: 12px;
   }
 
-  .left-input {
-    width: 100%;
-    border-radius: 12px;
-  }
-
+  .left-input,
   .right-input {
-    width: 100%;
-    border-radius: 12px;
-    padding: 16px 24px;
+    width: min(680px, 100%);
   }
 
-  .card-img {
-    display: flex;
-    flex-wrap: nowrap;
+  .card-contant {
     overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
     padding-bottom: 8px;
   }
 
-  .card-img::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card-img .img-card-cotainer {
-    min-width: 130px;
-    max-width: 130px;
-    margin: 10px;
-    flex-shrink: 0;
-  }
-
   .hero-cards {
-    height: 180px;
+    min-width: 280px;
+    height: 220px;
+  }
+
+  .instamart-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
   }
 
   .insta-card {
-    min-width: 120px;
+    min-width: 140px;
+    flex: 0 0 auto;
   }
 
   .insta-card img {
-    width: 120px;
-  }
-
-  footer {
-    min-height: auto;
+    width: 140px;
   }
 }
 
-/* Small Mobile (480px se neeche) */
-@media (max-width: 480px) {
-  .hero-cards {
-    height: 130px;
-  }
-
-  .card-img .img-card-cotainer {
-    min-width: 110px;
-    max-width: 110px;
-  }
-
-  .insta-card {
-    min-width: 100px;
-  }
-
-  .insta-card img {
-    width: 100px;
+@media (max-width: 767.98px) {
+  .section-hero {
+    min-height: auto;
+    padding-bottom: 18px;
   }
 
   .logo {
-    height: 44px;
+    height: 48px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .left-input,
+  .right-input {
+    border-radius: 12px;
+    padding: 13px 16px;
+    gap: 8px !important;
+  }
+
+  .text-right,
+  .text-left {
+    right: 0;
+    font-size: 14px;
+  }
+
+  .hero-card {
+    padding-inline: 10px;
+  }
+
+  .hero-cards {
+    min-width: 240px;
+    height: 180px;
+  }
+
+  .food-heading h3,
+  .instamart-section h3,
+  .city-name h3 {
+    font-size: 1.2rem;
+  }
+
+  .left-arrow {
+    height: 28px;
+  }
+
+  .card-img .img-card-cotainer {
+    max-width: 120px;
+    margin: 8px;
   }
 
   .item {
-    min-width: 160px;
+    min-width: 180px;
+    height: auto;
+    min-height: 64px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding-top: 14px !important;
+  }
+
+  .hero-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .left-input img {
+    width: 18px;
+  }
+
+  .left-input,
+  .right-input {
+    padding: 12px;
+  }
+
+  .insta-card {
+    min-width: 130px;
+  }
+
+  .insta-card img {
+    width: 130px;
+  }
+
+  .card-img .img-card-cotainer {
+    max-width: 102px;
+  }
+
+  .city-btn {
+    font-size: 12px;
+    padding: 8px;
   }
 }
